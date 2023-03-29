@@ -24,6 +24,9 @@
             var lasHoras = new Date().getHours();
             //var losMinutos = "MM";
              var lasMinutos = new Date().getMinute();
+            
+             document.querySelector("#horas").innerHTML = lasHora;
+             document.querySelector("#minutos").innerHTML = losMinutos;
 
             function preload() {
                 datos = loadJSON("https://digimon-api.vercel.app/api/digimon");
